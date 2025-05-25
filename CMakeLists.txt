@@ -55,6 +55,7 @@ pico_enable_stdio_usb(TempCycleDMA 1)
 
 # Add the standard library to the build
 target_link_libraries(TempCycleDMA pico_stdlib
+    pico_time
     hardware_adc
     hardware_dma
     hardware_irq
